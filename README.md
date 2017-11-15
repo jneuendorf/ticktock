@@ -8,6 +8,9 @@ The code has been ported to ES6 and there are some differences.
 
 - This timer does not support the `countdown` option.
 - `performance.now()` is used in favor of `Date.now()`
+- The method `lap` is now called `elapsed`.
+- There is a `resume` method (`pause` only pauses and does not resume the timer).
+- The [Conversion Helpers](https://github.com/mrchimp/tock#conversion) are gone.
 - `interval` is no longer an option - it's required.
     - It can be a function mapping the current tick to the time to wait until the next tick.
       It receives these arguments:
